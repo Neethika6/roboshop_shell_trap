@@ -13,7 +13,7 @@ cp $SCRIPT_DIR/mongo.repo /etc/yum.repos.d/mongo.repo
 
 
 echo "Installing the MONGODB"
-dnf install mongodb-org -y &>>$LOG_FILE
+dnf install mongoafdb-org -y &>>$LOG_FILE
 
 
 echo "Enable and start the mongodb instance"
