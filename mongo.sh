@@ -4,7 +4,7 @@ set -e
 source ./common.sh
 appaname=mongodb
 
-trap 'failure' "${LINENO}" "${BASH_COMMAND}" ERR
+trap 'failure ${LINENO} "${BASH_COMMAND}"' ERR
 check_root
 
 #MONGODB SETUP
